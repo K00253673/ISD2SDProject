@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="images/favicon.ico">
+        <title>Delete Profile?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/profile.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="mainWrapper">
+            <header> 
+                <!-- This is the header content. It contains Logo and links -->
+                <!-- <div class="logo"><img src="images/logo.png" alt="TabletopMash logo">
+                </div>-->
+                <div id="headerLinks"><a href="login.html" title="Login/Register">Login/Register</a><a href="#" title="Cart">Cart</a></div>
+                <nav class="navBar">
+
+                    <ul>
+                        <li><div class="logo"><img src="images/logo.png" alt="TabletopMash logo">
+                            </div></li>
+                        <li class="navlinks"><a href="index.html">Home</a></li>
+                        <li class="navlinks"><a href="">New Arrivals</a></li>
+                        <li class="navlinks"><a href="">Sale Items</a></li>
+                        <li class="navlinks">Browse
+                            <ul>
+                                <li><a href="">Campaign Guides</a></li>
+                                <li><a href="">Dice</a></li>
+                                <li><a href="">GM Screens</a></li>
+                            </ul>
+                        </li>
+                        <li class="navlinks">Your Profile
+                        <ul>
+                            <li><a href="deleteprofile.html">Delete Profile</a></li>
+                            <li><a href="updateprofile.html">Update Profile</a></li>
+                            <li><a href="profile.html">View your Profile</a></li>
+                        </ul>
+                        </li>
+                        <li class="navlinks"> <input type="search" name="searchfield" id="searchfield" placeholder="Search...">
+                    </ul>
+                </nav>
+
+            </header>
+            <main>
+                
+                <div class="leftSide">
+                    <div class="profile">
+                        <h2>Profile name</h2>
+                    </div>
+                    <hr>
+                    <ul>
+                        <li><a href="deleteproduct.html">Delete a product</a></li>
+                        <li><a href="updateproduct.html">Update product information</a></li>
+                        <li><a href="addProduct.html">Add a product</a></li>
+                        <li><a href="addStaff.html">Add Staff Member</a></li>
+                    </ul>
+                </div>
+                <div class="rightSide">
+                <div class="container">
+                    <label for="pId"><b>Product Id</b></label>
+                    <input type="text" placeholder="Enter product ID" name="pId" required>
+
+                    <label for="psw"><b>Admin Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="reason"><b>Why does this product need to be deleted?</b></label>
+                   <select name="deleteReason" id="deleteReason" >
+				<option value="oos">Out of Stock</option>
+				<option value="noSuplier">No Supplier available</option>
+				<option value="pIssue">Quality Issue</option>
+			</select>
+                    <button type="submit">Delete Product</button>
+                    
+                </div>
+                    </div>
+                
+            </main>
+            <footer> 
+                <!-- This is the footer with default 3 divs -->
+                <div>
+                    <h4>USEFUL LINKS</h4>
+                    <a href="https://company.wizards.com/">Wizards of the coast</a><br>
+                    <a href="https://store.warlordgames.com/collections/bolt-action">Warlord Games</a><br>
+                    <a href="https://www.yugioh-card.com/en/">Yu Gi Oh TCD</a><br>
+                </div>
+                <div>
+                    <h4>NAVIGATION</h4>
+                    <a href="">Home</a><br>
+                    <a href="">Cart</a><br>
+                    <a href="">Browse</a></div>
+                <div class="footerlinks">
+                    <h4>CONNECT WITH US</h4><br>
+                    <a href=""><img src="images/twitter.png"></a>
+                    <a href=""><img src="images/facebook.png"></a>
+                    <a href=""><img src="images/instagram.png"></a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

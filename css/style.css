@@ -1,0 +1,311 @@
+@charset "utf-8";
+/* Global Styles */
+a:hover {
+    color: rgba(0,0,0,1.00);
+}
+/*header*/
+header {
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(146,146,146,1.00);
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+}
+/* Logo placeholder*/
+/*#logo {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 8em;
+    text-align: center;
+}*/
+.logo{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.logo img{
+    max-height: 8em;
+    max-width: 8em;
+}
+/* div for Links in header */
+#headerLinks {
+    /*float: left;
+    width: calc( 100% - 8.6875em );*/
+    text-align: right;
+    
+    padding-bottom: 10px;
+}
+#searchfield::placeholder {
+    color: #333;
+}
+
+#searchfield {
+    box-sizing: content-box;
+    font-size: 100%;
+    font-family: inherit;
+   
+}
+
+#searchfield {
+    background: #eee;
+    border: solid 1px #999;
+    border-radius: 3px;
+
+    padding: 4px 5px 4px 5px;
+    width: 6em;
+
+    /* TODO: add the transition */
+    transition: all .3s;
+}
+
+/* TODO: Add the focus state */
+#searchfield:focus {
+    width: 15em;
+    background-color: #fff;
+    border-color: #74abff;
+
+    box-shadow: 0 0 10px rgba(109, 207, 246, .75);
+}
+/* Links in header */
+#headerLinks a {
+    text-decoration: none;
+    color: #141C24;
+    padding-left: 4.125em;
+    font-size: 14px;
+}
+/* Offer text banner*/
+#offer {
+    font-family: 'Montserrat', sans-serif;
+    clear: both;
+    background-image: url("../images/hero4.jpg");
+    color: #c7c7c7;
+    padding-left: 7.1em;
+    padding-top: 6em;
+    padding-bottom: 15em;
+}
+.navBar {
+    clear: both;
+    height: 8em;
+    background-color: #141C24;
+    margin-bottom: 0.1em;
+}
+
+.navBar ul {
+    display: block;
+    justify-content: center;
+    padding-top: 0.5em;
+    margin: 0;
+}
+
+.navBar ul li {
+    text-align: center;
+    width: 12%;
+    margin: 0 1em;
+    float: left;
+}
+.navBar ul .navlinks{
+    font-family: 'Montserrat', sans-serif;
+    color: #7D97B5;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    width: 8%;
+    padding: 0.5em;
+    padding-bottom: 1em;
+    padding-top: 3em;
+    margin: 0 1em;
+    height: 1em;
+    float: left;
+}
+.navBar ul li:hover ul {
+    display: block;
+}
+
+.navBar ul li ul {
+    width: 10em;
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -30px;
+    top: 13px;
+    list-style: none;
+}
+
+.navBar ul li ul li {
+    background-color: #141C24;
+    width: 12em;
+    padding: 1em 0;
+}
+
+.navBar ul li ul li:hover {
+    background-color: #4A6482;
+}
+
+.navBar ul li a {
+    width: 100%;
+    list-style: none;
+    color: #7D97B5;
+    padding: 0.5em;
+    text-decoration: none;
+}
+/* Main content of the site */
+#content {
+    clear: both;
+    overflow: auto;
+    padding-top: 1.8em;
+}
+/* main content of the site */
+#content .mainContent {
+    width: 90%;
+    text-align: center;
+    padding-left: 4%;
+}
+/* Whole page content */
+#mainWrapper {
+    width: 80%;
+    padding-left: 10%;
+}
+/*menu elements */
+.menu ul li {
+    list-style-type: none;
+    font-size: x-large;
+    position: relative;
+    left: -35px;
+    padding-top: 12px;
+}
+body {
+    background-color: #D3DCE6;
+}
+/* Product rows for catalog */
+#content .mainContent .productRow {
+    overflow: auto;
+    color: rgba(146,146,146,1.00);
+}
+/* Each product Information in the catalog */
+.mainContent .productRow .productInfo {
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 23%;
+}
+/* Prices of a products in catalog */
+.productRow .productInfo .price {
+    font-family: 'Montserrat', sans-serif;
+    color: #4A6482;
+    font-size: 22px;
+    position: relative;
+    top: -20px;
+}
+/* Content holder for products in catalog*/
+.productRow .productInfo .productContent {
+    position: relative;
+    top: -37px;
+    font-size: 14px;
+    font-family: source-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color: #4A6482;
+    white-space: pre-wrap;
+}
+/* Buy button for products in catalog */
+.productRow .productInfo .buyButton {
+    position: relative;
+    top: -48px;
+    width: 84%;
+    background-color: #141C24;
+    height: 35px;
+    color: rgba(255,255,255,1.00);
+    border-style: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+/* footer */
+#mainWrapper footer {
+    clear: both;
+    overflow: auto;
+    background-color: #141C24;
+    font-family: source-sans-pro, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1;
+    padding-top: 22px;
+    padding-left: 22px;
+    text-align: center;
+    padding-bottom: 22px;
+    padding-right: 22px;
+}
+/*Each footer content */
+#mainWrapper footer div {
+    width: 27%;
+    float: left;
+    padding-left: 4%;
+    padding-right: 2%;
+    color: rgba(255,255,255,1.00);
+    text-align: justify;
+}
+/* Links in footer */
+footer div a{
+    color: #7D97B5;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+footer div a:hover{
+    color:#D3DCE6;
+}
+footer div h4{
+    color: #7D97B5;
+    display: block;
+    text-align: center;
+}
+/* Product's images in catalog */
+.productInfo div img {
+    width: 100%;
+}
+/* Container for links in footer */
+footer .footerlinks {
+    margin-top: -15px;
+}
+footer .footerlinks a img{
+    display: inline;
+}
+
+input[type] {
+    margin-left: .5em;
+}
+input:focus {
+    outline:none;
+}
+input[type=search] {
+    box-sizing: border-box;
+    display: inline-block;
+    border-width: 1px;
+    border-color: lightgray;
+}
+.loginScreen .welcomLog{
+    background-image: url("../images/login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    width: 35%;
+    float:left;
+    margin-bottom: 2em;
+    margin-left: 10%;
+}
+.loginScreen h1, h2{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.loginScreen hr{
+    height: 4px;
+    width: 10%;
+    background-color: black;
+    margin-left: 2em;
+}
+.loginScreen form{
+    background-color: white;
+    border: 0 0 0 0;
+}
