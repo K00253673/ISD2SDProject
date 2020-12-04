@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="images/favicon.ico">
-        <title>Delete Profile?</title>
+        <title>Your Cart</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -56,38 +56,49 @@ and open the template in the editor.
             
             </header>
             <main>
-                
-                <div class="leftSide">
-                    <div class="profile">
-                        <h2>Profile name</h2>
+                <div id="content">
+                <div class="cart">
+                    <div class="cartItems">
+                        <h2>Your Cart</h2>
+                        <div class="cartFormat">
+                            <div class="infoCart">
+                                <h3>Product name</h3>
+                                <p>Product 1</p>
+                                <p>Product 2</p>
+                                <p>Product 3</p>
+                            </div>
+                            <div class="infoPrice">
+                                <h3>Price</h3>
+                                <p>€49.99</p>
+                                <p>€49.99</p>
+                                <p>€49.99</p>
+                            </div>
+                            <div class="infoQuanitiy">
+                                <h3>Quantity</h3>
+                                <p>1</p>
+                                <p>1</p>
+                                <p>1</p>
+                            </div>
+                        </div>
                     </div>
-                    <hr>
-                    <ul>
-                        <li><a href="deleteproduct.html">Delete a product</a></li>
-                        <li><a href="updateproduct.html">Update product information</a></li>
-                        <li><a href="addProduct.html">Add a product</a></li>
-                        <li><a href="addStaff.html">Add Staff Member</a></li>
-                    </ul>
-                </div>
-                <div class="rightSide">
-                <div class="container">
-                    <label for="pId"><b>Product Id</b></label>
-                    <input type="text" placeholder="Enter product ID" name="pId" required>
-
-                    <label for="psw"><b>Admin Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <label for="reason"><b>Why does this product need to be deleted?</b></label>
-                   <select name="deleteReason" id="deleteReason" >
-				<option value="oos">Out of Stock</option>
-				<option value="noSuplier">No Supplier available</option>
-				<option value="pIssue">Quality Issue</option>
-			</select>
-                    <button type="submit">Delete Product</button>
-                    
-                </div>
+                    <div class="cartTotals">
+                        <h2>Order Totals</h2>
+                        <div class="cartFormat">
+                        <div class="totalsName">
+                            <p>Product 1</p>
+                            <p>Product 2</p>
+                            <p>Product 3</p>
+                        </div>
+                        <div class="totalsPrice">
+                            <p>Price 1</p>
+                            <p>Price 2</p>
+                            <p>Price 3</p>
+                        </div>
+                        </div>  
+                        <button>Purchase</button>
                     </div>
-                
+                </div>
+                </div>
             </main>
             <footer> 
                 <!-- This is the footer with default 3 divs -->

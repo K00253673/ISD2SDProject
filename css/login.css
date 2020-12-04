@@ -12,6 +12,9 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
   
 }
+#register{
+    display: none;
+}
 button {
   background-color: #141C24;
   color: white;

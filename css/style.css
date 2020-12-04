@@ -60,7 +60,7 @@ header {
 
 /* TODO: Add the focus state */
 #searchfield:focus {
-    width: 15em;
+    width: 10em;
     background-color: #fff;
     border-color: #74abff;
 
@@ -141,7 +141,49 @@ header {
 .navBar ul li ul li:hover {
     background-color: #4A6482;
 }
-
+.cart{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    margin: 0;
+}
+.cartItems{
+    width:70%;
+    background-color: white;
+    
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.cartTotals{
+    width: 30%;
+    background-color: white;
+    border-left: solid grey;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.cartFormat{
+    display: flex;
+}
+.totalsName{
+    width: 60%;
+}
+.delivery{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.totalsPrice{
+    width: 30%;
+    padding-left: 1em;
+}
+.infoCart{
+    width: 70%;
+}
+.infoPrice, .infoQuanitiy{
+    width: 10%;
+}
+.cart h2{
+    border-bottom: 1px solid grey;
+}
 .navBar ul li a {
     width: 100%;
     list-style: none;
@@ -152,8 +194,11 @@ header {
 /* Main content of the site */
 #content {
     clear: both;
-    overflow: auto;
+    
     padding-top: 1.8em;
+    width: 80%;
+    margin:auto;
+    padding-bottom: 1em;
 }
 /* main content of the site */
 #content .mainContent {
@@ -162,10 +207,7 @@ header {
     padding-left: 4%;
 }
 /* Whole page content */
-#mainWrapper {
-    width: 80%;
-    padding-left: 10%;
-}
+
 /*menu elements */
 .menu ul li {
     list-style-type: none;
